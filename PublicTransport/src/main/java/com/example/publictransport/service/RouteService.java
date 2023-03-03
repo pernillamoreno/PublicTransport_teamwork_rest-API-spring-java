@@ -5,7 +5,7 @@ import com.example.publictransport.repository.RouteRepository;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-;
+
 
 import java.util.List;
 @Service
@@ -15,7 +15,7 @@ public class RouteService {
     @Autowired
     RouteRepository routeRepository;
 
-    public List<Route> getAll() {
+    public List<Route> getAllRoutes() {
         log.debug("All courses is being fetched");
         return routeRepository.findAll();
     }
@@ -45,9 +45,11 @@ public class RouteService {
     public void deleteRoute(long id) {
         routeRepository.deleteById(id);
     }
+
+    public Route addRoute(Route route) { {return routeRepository.save(route);
+    }
+    }
 }
-
-
 
 
 
