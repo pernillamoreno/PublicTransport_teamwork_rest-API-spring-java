@@ -1,4 +1,7 @@
-project is UNDER CONSTUCTION
+project is UNDER CONSTRUCTION!
+
+Öppna REST endpoints för datakommunikation
+Skapa kod som använder Springs arkitektur
 
 # PublicTransport
 
